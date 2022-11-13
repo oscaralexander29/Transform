@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtros</title>
+    <style>
+      section {
+        display: flex;
+        flex-flow: row wrap;
+      }
+      section img {
+        display: block;
+      }
+      /*FILTRO GRAYSCALE*/
+      /*  .filtros{  */
+      /* filter: grayscale(100%); */
+      /* } */
+      /* filter: sepia(100%) blur(10px); */
+      /* filter: blur(10px); */
+      /* Brightness */
+      .filtros {
+        width: 30%;
+        border-radius: 50%;
+        filter: brightness(118%) hue-rotate(329deg) saturate(286%) opacity(85%)
+          contrast(168%) invert(7%) drop-shadow(10px 10px 5px #1fff17);
+          /* transform: rotate(289deg); */
+      }
+      .filtros:hover{
+        /* transform: rotate(11deg); */
+        /* transform: scale(1.3) ; */
+        /* transform: skew(18deg); */
+        /* transform: translate(76px,0px); */
+        transform: translate(97px,62px);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>FILTROS CON CSS</h1>
+    </header>
+    <main>
+      <section>
+        <img src="img/paisaje.jpeg" class="filtros" alt="Paisaje" />
+        <img src="img/paisaje2.jpeg" class="filtros" alt="Paisaje" />
+        <img src="img/paisaje.jpeg" class="filtros" alt="Paisaje" />
+        <img src="img/paisaje2.jpeg" class="filtros" alt="Paisaje" />
+        <img src="img/paisaje.jpeg" class="filtros" alt="Paisaje" />
+        <img src="img/paisaje2.jpeg" class="filtros" alt="Paisaje" />
+      </section>
+    </main>
+  </body>
+</html>
